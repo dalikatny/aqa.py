@@ -1,0 +1,15 @@
+def func():
+    x=input("Введите число:")
+    print(x)
+
+func()
+func()
+func()
+func()
+func()
+func()
+func()
+func()
+func()
+func()
+func()
