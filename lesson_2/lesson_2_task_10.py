@@ -1,11 +1,9 @@
-def bank():
-    x = int(input("Введите размер вклада (руб.): " ))
-    y = int(input("Срок вклада (в годах) : " ))
-    z = 10
-    sum=(x*1*((z/100)))
-    if y==1:
-     print(sum)
-    else:
-     sum_if_more_1_year=sum+(sum*y*((z/100)))
-     print(sum_if_more_1_year)     
-bank()
+def bank1():
+  x=int(input("Введите сумму депозита: "))
+  y=int(input("Введите срок депозита: "))
+  z=0.1
+  for i in range(y):
+    x+=x*z
+  print(x)
+
+bank1()
