@@ -27,7 +27,7 @@ def test_starts_with():
     assert res == True
 
 def test_end_with():
-    res=dalik.end_with("dalik","K")
+    res=dalik.end_with("dalik","k")
     assert res == True
 
 def test_is_empty():
@@ -36,5 +36,5 @@ def test_is_empty():
 
 def test_list_to_string():
     res=dalik.list_to_string(["dalik","d"])
-    assert res == "dalik","d"
+    assert res == "dalik, d"
 
