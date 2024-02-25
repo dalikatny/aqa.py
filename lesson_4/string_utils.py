@@ -17,10 +17,10 @@ class StringUtils:
         """
         whitespace = " "
         while (string.startswith(whitespace)):
-            string = string.removeprefix(whitespace)
+            string = string.strip(whitespace)
         return string
     
-    def to_list(self, string: str, delimeter = ",") -> list[str]:
+    def to_list(self, string: str, delimeter = ",") -> list([str]):
         """
         Принимает на вход текст с разделителем и возвращает список строк. \n
         Параметры: \n 
