@@ -1,0 +1,3 @@
+DevTools listening on ws://127.0.0.1:52011/devtools/browser/cd1cc3e6-a20c-4438-ab59-2b708fd324d1
+[4904:5188:0319/194736.427:ERROR:ssl_client_socket_impl.cc(970)] handshake failed; returned -1, SSL error code 1, net_error -200
+PS C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py> 

@@ -1,0 +1,51 @@
+ (No symbol) [0x011F1734]
+        (No symbol) [0x011EC618]
+        (No symbol) [0x011EC7C9]
+        (No symbol) [0x011DDDF0]
+        BaseThreadInitThunk [0x7512FCC9+25]
+        RtlGetAppContainerNamedObjectPath [0x771F7C5E+286]
+        RtlGetAppContainerNamedObjectPath [0x771F7C2E+238]
+
+PS C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py> & c:/Users/Dalikatny/Desktop/ucheba/py/skypro/aqa.py/venv/Scripts/python.exe c:/Users/Dalikatny/Desktop/ucheba/py/skypro/aqa.py/lesson_5/task_4_withoutID.py
+
+DevTools listening on ws://127.0.0.1:52011/devtools/browser/cd1cc3e6-a20c-4438-ab59-2b708fd324d1
+[4904:5188:0319/194736.427:ERROR:ssl_client_socket_impl.cc(970)] handshake failed; returned -1, SSL error code 1, net_error -200
+PS C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py> & c:/Users/Dalikatny/Desktop/ucheba/py/skypro/aqa.py/venv/Scripts/python.exe c:/Users/Dalikatny/Desktop/ucheba/py/skypro/aqa.py/lesson_5/task_5_CSSstyle.py
+
+DevTools listening on ws://127.0.0.1:52079/devtools/browser/9e50e632-ae72-443d-b3d7-5bdec9b7341d
+[5076:10164:0319/194837.461:ERROR:ssl_client_socket_impl.cc(970)] handshake failed; returned -1, SSL error code 1, net_error -200
+Traceback (most recent call last):
+  File "c:/Users/Dalikatny/Desktop/ucheba/py/skypro/aqa.py/lesson_5/task_5_CSSstyle.py", line 12, in <module>
+    search_input=driver.find_element(By.CSS_SELECTOR,'.btn.class1.btn-primary.btn-test')
+  File "C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute    self.error_handler.check_response(response)
+  File "C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".btn.class1.btn-primary.btn-test"}
+  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+        GetHandleVerifier [0x01278D03+51395]
+        (No symbol) [0x011E5F61]
+        (No symbol) [0x0109E13A]
+        (No symbol) [0x010D62BB]
+        (No symbol) [0x010D63EB]
+        (No symbol) [0x0110C162]
+        (No symbol) [0x010F3ED4]
+        (No symbol) [0x0110A570]
+        (No symbol) [0x010F3C26]
+        (No symbol) [0x010CC629]
+        (No symbol) [0x010CD40D]
+        GetHandleVerifier [0x015F68D3+3712147]
+        GetHandleVerifier [0x01635CBA+3971194]
+        GetHandleVerifier [0x01630FA8+3951464]
+        GetHandleVerifier [0x01329D09+776393]
+        (No symbol) [0x011F1734]
+        (No symbol) [0x011EC618]
+        (No symbol) [0x011EC7C9]
+        (No symbol) [0x011DDDF0]
+        BaseThreadInitThunk [0x7512FCC9+25]
+        RtlGetAppContainerNamedObjectPath [0x771F7C5E+286]
+        RtlGetAppContainerNamedObjectPath [0x771F7C2E+238]
+
+PS C:\Users\Dalikatny\Desktop\ucheba\py\skypro\aqa.py> 
