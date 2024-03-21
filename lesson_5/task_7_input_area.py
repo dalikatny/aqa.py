@@ -7,13 +7,13 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 #зайти на site
-driver.get("http://the-internet.herokuapp.com/entry_ad")
+driver.get("http://the-internet.herokuapp.com/inputs")
 # #три раза кликните на кнопку .
-search_input=driver.find_element(By.CSS_SELECTOR,'div.modal-footer')
+search_input=driver.find_element(By.CSS_SELECTOR,'input')
 sleep(2)
-search_input.click()
+search_input.send_keys("1000")
 sleep(2)
-search_input.click()
+search_input.clear()
 sleep(2)
-search_input.click()
+search_input.send_keys("999")
 sleep(2)
