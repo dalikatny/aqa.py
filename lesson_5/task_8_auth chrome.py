@@ -7,9 +7,12 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 #зайти на site
-driver.get("http://the-internet.herokuapp.com/inputs")
+driver.get("http://the-internet.herokuapp.com/login")
 # #три раза кликните на кнопку .
-search_input=driver.find_element(By.CSS_SELECTOR,'input')
-search_input.send_keys("1000")
-search_input.clear()
-search_input.send_keys("999")
+search_input=driver.find_element(By.CSS_SELECTOR,'input#username')
+search_input.send_keys("tomsmith")
+search_input=driver.find_element(By.CSS_SELECTOR,'input#password')
+search_input.send_keys("SuperSecretPassword!")
+search_input=driver.find_element(By.CSS_SELECTOR,'button.radius')
+search_input.click()
+sleep(2)
