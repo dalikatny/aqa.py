@@ -4,12 +4,11 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.common.by import By
 service = FirefoxService(executable_path=GeckoDriverManager().install())
 driver = webdriver.Firefox(service=service)
-
 #зайти на site
-driver.get("http://the-internet.herokuapp.com/entry_ad")
-# #три раза кликните на кнопку .
-search_modal_button=driver.find_element(By.CSS_SELECTOR,'div.modal-footer')
-search_modal_button.click()
-search_modal_button.click()
-search_modal_button.click()
+driver.get("http://uitestingplayground.com/classattr")
+#три раза кликните на кнопку .
+search_button=driver.find_element(By.CSS_SELECTOR,'button.btn.class3')
+search_button.click()
+search_button.click()
+search_button.click()
 driver.quit()
