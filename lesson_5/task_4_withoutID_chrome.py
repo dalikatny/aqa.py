@@ -9,7 +9,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 #зайти на site
 driver.get("http://uitestingplayground.com/dynamicid")
 #три раза кликните на кнопку .
-search_button=driver.find_element(By.CSS_SELECTOR,'button.btn.btn-primary')
-search_button.click()
-search_button.click()
-search_button.click()
+button=driver.find_element(By.CSS_SELECTOR,'button.btn.btn-primary')
+button.click()
+button.click()
+button.click()

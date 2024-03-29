@@ -7,8 +7,8 @@ driver = webdriver.Firefox(service=service)
 #зайти на site
 driver.get("http://uitestingplayground.com/classattr")
 #три раза кликните на кнопку .
-search_button=driver.find_element(By.CSS_SELECTOR,'btn.btn-primary')
-search_button.click()
-search_button.click()
-search_button.click()
+blue_button=driver.find_element(By.CSS_SELECTOR,'btn.btn-primary')
+blue_button.click()
+blue_button.click()
+blue_button.click()
 driver.quit()

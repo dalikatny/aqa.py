@@ -9,7 +9,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 #зайти на site
 driver.get("http://the-internet.herokuapp.com/entry_ad")
 # #три раза кликните на кнопку .
-search_modal_button=driver.find_element(By.CSS_SELECTOR,'div.modal-footer')
-search_modal_button.click()
-search_modal_button.click()
-search_modal_button.click()
+modal_button=driver.find_element(By.CSS_SELECTOR,'div.modal-footer')
+modal_button.click()
+modal_button.click()
+modal_button.click()
