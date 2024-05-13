@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-from pages_2.MainPage import MainPage
+from lesson_7.homework.pages.MainPage2 import MainPage
 
 def test_calc():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))

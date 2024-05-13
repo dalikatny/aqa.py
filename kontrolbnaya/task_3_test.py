@@ -14,11 +14,15 @@ def test_selenium():
   driver.find_element(By.CSS_SELECTOR,'#user-name').send_keys('standard_user')
   driver.find_element(By.CSS_SELECTOR,'#password').send_keys('secret_sauce')
   driver.find_element(By.CSS_SELECTOR,'#login-button').click()
+  #Add clothes
   driver.find_element(By.CSS_SELECTOR,'#add-to-cart-sauce-labs-backpack').click()
   driver.find_element(By.CSS_SELECTOR,'#add-to-cart-sauce-labs-bolt-t-shirt').click()
   driver.find_element(By.CSS_SELECTOR,'#add-to-cart-sauce-labs-onesie').click()
+  # go to the cart
   driver.find_element(By.CSS_SELECTOR,'a.shopping_cart_link').click()
+  # click checkout
   driver.find_element(By.CSS_SELECTOR,'#checkout').click()
+  #filling mail data
   driver.find_element(By.CSS_SELECTOR,'#first-name').send_keys('test')
   driver.find_element(By.CSS_SELECTOR,'#last-name').send_keys('testov')
   driver.find_element(By.CSS_SELECTOR,'#postal-code').send_keys('672030')

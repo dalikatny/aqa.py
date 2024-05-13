@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-from pages_1.MainPage import MainPage
+from pages.MainPage1 import MainPage
 
 
 def test_color_zipcode():
