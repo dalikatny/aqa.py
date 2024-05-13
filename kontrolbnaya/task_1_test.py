@@ -32,8 +32,7 @@ def test_selenium():
   driver.find_element(By.CSS_SELECTOR,'[name="job-position"]').send_keys('QA')
   driver.find_element(By.CSS_SELECTOR,'[name="company"]').send_keys('SkyPro')
   driver.find_element(By.CSS_SELECTOR,'button').click()
-
-
+  
   input = driver.find_elements(By.CSS_SELECTOR,'.alert')
 
   for x in input:
@@ -44,3 +43,5 @@ def test_selenium():
         continue
 
       assert exist(classes, "alert-success")  == True
+
+# test_selenium()
